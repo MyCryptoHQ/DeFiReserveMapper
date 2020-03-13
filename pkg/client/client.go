@@ -5,7 +5,6 @@ import (
 	"log"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	//"github.com/mycryptohq/DeFiReserveMapper/pkg/process"
-	//"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
@@ -17,9 +16,4 @@ func MakeETHClient () (*ethclient.Client) {
 		log.Fatalf("Could not collect to eth client")
 	}
 	return client
-}
-
-
-func getBalance(client *ethclient.Client, address string) (error) {
-	return nil
 }
