@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Compound: Augur",
+        "tokenAddress": "0x1985365e9f78359a9B6AD760e32412f4a445E862",
+        "contractAddress": "0x158079Ee67Fce2f58472A96584A73C7Ab9AC95c1",
+        "type": "compound",
+        "uuid": "7749b621-c2e8-553b-83c7-f73d86a38eb7",
+        "decimals": 8
+    },
+    {
+        "name": "Compound: USDCoin",
+        "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "contractAddress": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+        "type": "compound",
+        "uuid": "282fd2da-f437-5f53-a167-ca7f7e91c57f",
+        "decimals": 8
+    },
+    {
+        "name": "Compound: Ether",
+        "tokenAddress": "",
+        "contractAddress": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+        "type": "compound-ether",
+        "uuid": "4f96a9e6-bf30-54d0-90c0-3d6e7d7042f2",
+        "decimals": 8
+    },
+    {
+        "name": "Compound: Basic Attention Token",
+        "tokenAddress": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+        "contractAddress": "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E",
+        "type": "compound",
+        "uuid": "4a21c8bc-3df3-5d61-b9c4-c6c2f2296914",
+        "decimals": 8
+    },
+    {
+        "name": "Compound: 0x Token",
+        "tokenAddress": "0xE41d2489571d322189246DaFA5ebDe1F4699F498BA",
+        "contractAddress": "0xB3319f5D18Bc0D84dD1b4825Dcde5d5f7266d407",
+        "type": "compound",
+        "uuid": "e35a1b81-b775-5b8b-9744-ef997b4f677c",
+        "decimals": 8
+    },
+    {
+        "name": "Compound: Dai Token",
+        "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "contractAddress": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+        "type": "compound",
+        "uuid": "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3",
+        "decimals": 8
+    }
+]

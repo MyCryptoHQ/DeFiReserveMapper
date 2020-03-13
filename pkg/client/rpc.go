@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func getBalance(client ethclient.Client, address string) (*big.Int, error) {
+func GetBalance(client ethclient.Client, address string) (*big.Int, error) {
 	account := common.HexToAddress(address)
 	balance, err := client.BalanceAt(context.Background(), account, nil)
 	if err != nil {

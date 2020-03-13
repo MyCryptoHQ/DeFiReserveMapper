@@ -5,7 +5,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func balanceOf(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
+func BalanceOf(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
 	
 	tokenCaller, err := NewTokenCaller(tokenObject.Contract, client)
 	if err != nil {
@@ -19,7 +19,7 @@ func balanceOf(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, er
 	return balance, err
 }
 
-func totalSupply(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
+func TotalSupply(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
 	
 	tokenCaller, err := NewTokenCaller(tokenObject.Contract, client)
 	if err != nil {

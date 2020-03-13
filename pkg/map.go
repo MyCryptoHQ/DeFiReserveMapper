@@ -5,17 +5,22 @@ import (
 )
 
 type ReserveExchangeRate struct {
-	Rates			[]ReserveExchangeRatesObject	`json:"rates"`
+	Type				string							`json:"type"`
+	ReserveRate			[]ReserveExchangeRatesObject	`json:"reserveRate"`
 }
 
 type ReserveExchangeRatesObject struct {
-	Type			string							`json:"type"`
+	AssetId			string							`json:"assetId"`
 	Rate			*big.Float						`json:"rate"`
 }
 
 type ImportItem struct {
-	Uuid				string		`json:"uuid"`
-	Type				string		`json:"type"` 	// uniswap || compound
-	Name				string		`json:"name"`
-	ContractAddress		string		`json:"contractAddress"`
+	Type					string		`json:"type"` 	// uniswap || compound
+	Name					string		`json:"name"`
+	ReserveTokenAddress		string		`json:"reserveTokenAddress"` // reserve token contract address
+	ReserveTokenDecimals	int			`json:"reserveTokenDecimals"`
+	ReserveTokenUuid		string		`json:"reserveTokenUuid"`
+	PoolTokenUuid			string		`json:"poolTokenUuid"`
+	PoolTokenAddress		string		`json:"poolTokenAddress"` // pool token contract address
+	PoolTokenDecimals		int			`json:"poolTokenDecimals"`
 }

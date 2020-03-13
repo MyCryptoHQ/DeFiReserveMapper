@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Uniswap: Dai Stablecoin",
+        "type": "uniswap",
+        "reserveTokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "reserveTokenUuid": "e1f698bf-cb85-5405-b563-14774af14bf1",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0x2a1530C4C41db0B0b2bB646CB5Eb1A67b7158667",
+        "poolTokenUuid": "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87",
+        "poolTokenDecimals": 18
+    }
+]

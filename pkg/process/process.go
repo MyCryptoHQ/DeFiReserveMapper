@@ -1,20 +1,41 @@
 package process
 
 import (
-	"math"
-	"math/big"
+	"fmt"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
 )
 
-func ConvertFromWei(amount big.Int) float64 {
-	inputAmountFloat := new(big.Float).SetInt(&amount)
-	output := new(big.Float).Quo(inputAmountFloat, big.NewFloat(math.Pow10(int(18))))
-	outputFloat, _ := output.Float64()
-	return outputFloat
-}
+func ProcessAssets(assetItems []root.ImportItem) ([]root.ReserveExchangeRatesObject, error) {
+	client := client.MakeETHClient()
+	var returnItems []root.ReserveExchangeRatesObject
+	for _, item := range assetItems {
+		switch item.Type {
+		case "uniswap":
+			uniswapETHRate, err := BuildUniswapETHReserveRate(client, item)
+			if err != nil {
+				fmt.Println(err)
+				return returnItems, err
+			}
+			
+			rateItem :=  root.ReserveExchangeRatesObject{
+				AssetId: root.EtherUUID,
+				Rate: uniswapETHRate,
+			}
+			returnItems = append(returnItems, rateItem)
 
-func ConvertFromBase(amount big.Int, decimal int) float64 {
-	inputAmountFloat := new(big.Float).SetInt(&amount)
-	output := new(big.Float).Quo(inputAmountFloat, big.NewFloat(math.Pow10(int(decimal))))
-	outputFloat, _ := output.Float64()
-	return outputFloat
+			uniswapERC20Rate, err := BuildUniswapERC20ReserveRate(client, item)
+			if err != nil {
+				fmt.Println(err)
+				return returnItems, err
+			}
+			
+			secondRateItem :=  root.ReserveExchangeRatesObject{
+				AssetId: item.ReserveTokenUuid,
+				Rate: uniswapERC20Rate,
+			}
+			returnItems = append(returnItems, secondRateItem)
+		}
+	}
+	return returnItems, nil
 }
