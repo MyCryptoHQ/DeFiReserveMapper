@@ -5,8 +5,8 @@ import (
 )
 
 type ReserveExchangeRate struct {
-	Type				string							`json:"type"`
-	ReserveRate			[]ReserveExchangeRatesObject	`json:"reserveRate"`
+	Type					string							`json:"type"`
+	ReserveRates			[]ReserveExchangeRatesObject	`json:"reserveRates"`
 }
 
 type ReserveExchangeRatesObject struct {

@@ -6,36 +6,38 @@ import (
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
 )
 
-func ProcessAssets(assetItems []root.ImportItem) ([]root.ReserveExchangeRatesObject, error) {
+func ProcessAssets(assetItems []root.ImportItem) (map[string]root.ReserveExchangeRate, error) {
 	client := client.MakeETHClient()
-	var returnItems []root.ReserveExchangeRatesObject
+	outputMap := make(map[string]root.ReserveExchangeRate)
 	for _, item := range assetItems {
+		var returnItems []root.ReserveExchangeRatesObject
 		switch item.Type {
 		case "uniswap":
 			uniswapETHRate, err := BuildUniswapETHReserveRate(client, item)
-			if err != nil {
+			if err == nil {
 				fmt.Println(err)
-				return returnItems, err
+				rateItem :=  root.ReserveExchangeRatesObject{
+					AssetId: root.EtherUUID,
+					Rate: uniswapETHRate,
+				}
+				returnItems = append(returnItems, rateItem)
 			}
-			
-			rateItem :=  root.ReserveExchangeRatesObject{
-				AssetId: root.EtherUUID,
-				Rate: uniswapETHRate,
-			}
-			returnItems = append(returnItems, rateItem)
 
 			uniswapERC20Rate, err := BuildUniswapERC20ReserveRate(client, item)
-			if err != nil {
+			if err == nil {
 				fmt.Println(err)
-				return returnItems, err
-			}
-			
-			secondRateItem :=  root.ReserveExchangeRatesObject{
-				AssetId: item.ReserveTokenUuid,
-				Rate: uniswapERC20Rate,
-			}
-			returnItems = append(returnItems, secondRateItem)
+				secondRateItem :=  root.ReserveExchangeRatesObject{
+					AssetId: item.ReserveTokenUuid,
+					Rate: uniswapERC20Rate,
+				}
+				returnItems = append(returnItems, secondRateItem)
+			}	
 		}
+		resultantObject := root.ReserveExchangeRate{
+			Type: item.Type,
+			ReserveRates: returnItems,
+		}
+		outputMap[item.PoolTokenUuid] = resultantObject
 	}
-	return returnItems, nil
+	return outputMap, nil
 }
