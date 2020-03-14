@@ -1,0 +1,23 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    
+    steps:   
+    - name: Installing Terraform
+      run: |
+        "cd /usr/bin"
+        "curl -O https://releases.hashicorp.com/terraform/0.12.6/terraform_0.12.6_linux_amd64.zip"
+        "unzip terraform_0.12.6_linux_amd64.zip"
+        
+    - name: Terraform init and plan
+      run: |
+        "ls"
+        "cd terraform"
+        echo "initializing Terraform..."
+        "terraform init"
+        "terraform plan"
+
