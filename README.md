@@ -6,6 +6,7 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 `go version go1.13.5`
 
 ### ToDo:
+- [ ] Figure out bottlenecking requests so we don't spam the node and get blocked
 - [ ] Handle compound assets.
 - [ ] Handle compound-ether asset (cETH => its different because its not an erc20 token).
 - [ ] Figure out caching on AWS.
