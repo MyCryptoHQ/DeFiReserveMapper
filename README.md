@@ -5,6 +5,12 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 ##### Requires:
 `go version go1.13.5`
 
+### ToDo:
+- [ ] Handle compound assets.
+- [ ] Handle compound-ether asset (cETH => its different because its not an erc20 token).
+- [ ] Figure out caching on AWS.
+- [ ] Figure out setting up timers to handle time events.
+
 ### To run:
 `cd app && go build && ./app`
 
