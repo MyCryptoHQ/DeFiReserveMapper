@@ -12,7 +12,7 @@
     {
         "name": "Uniswap: Dai Stablecoin",
         "type": "uniswap",
-        "updateInterval": 60, // Update this one every 60 seconds. Otherwise, default to 30 minute update interval.
+        "updateInterval": 60,
         "reserveTokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
         "reserveTokenUuid": "e1f698bf-cb85-5405-b563-14774af14bf1",
         "reserveTokenDecimals": 18,
