@@ -1,7 +1,6 @@
 package process
 
 import (
-	"fmt"
 	"math"
 	"math/big"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
@@ -21,8 +20,6 @@ func BuildUniswapETHReserveRate(ETHClient *ethclient.Client, importedItem root.I
 		Name: importedItem.Name,
 		Decimals: int64(importedItem.PoolTokenDecimals),
 	}
-
-	fmt.Println(importedItem)
 
 	poolReserveTotalSupply, err := client.TotalSupply(ETHClient, poolTokenObject)
 	if err != nil {
