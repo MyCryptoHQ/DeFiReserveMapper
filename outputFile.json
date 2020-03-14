@@ -1,0 +1,44 @@
+{
+    "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87": {
+        "type": "uniswap",
+        "lastUpdated": 1584224619,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3693151115648732"
+            },
+            {
+                "assetId": "e1f698bf-cb85-5405-b563-14774af14bf1",
+                "rate": "162.8145178637842"
+            }
+        ]
+    },
+    "43b7e3fb-86ea-595e-b3df-cda91181881d": {
+        "type": "uniswap",
+        "lastUpdated": 1584223587,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2185861958949742"
+            },
+            {
+                "assetId": "0486cb78-9392-5ff0-a790-03843d79b073",
+                "rate": "2.915704e-12"
+            }
+        ]
+    },
+    "459a37b4-ad23-5c2b-8030-031eeff78453": {
+        "type": "uniswap",
+        "lastUpdated": 1584224311,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.6759333653860997"
+            },
+            {
+                "assetId": "53306efd-fb16-5e9a-b6d0-fc0e9713da40",
+                "rate": "205.45252351804172"
+            }
+        ]
+    }
+}

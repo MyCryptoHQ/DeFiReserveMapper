@@ -1,12 +1,33 @@
 [
     {
+        "name": "Uniswap: Dai Stablecoin v1.0 (SAI)",
+        "type": "uniswap",
+        "reserveTokenAddress": "0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359",
+        "reserveTokenUuid": "53306efd-fb16-5e9a-b6d0-fc0e9713da40",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0x09cabEC1eAd1c0Ba254B09efb3EE13841712bE14",
+        "poolTokenUuid": "459a37b4-ad23-5c2b-8030-031eeff78453",
+        "poolTokenDecimals": 18
+    },
+    {
         "name": "Uniswap: Dai Stablecoin",
         "type": "uniswap",
+        "updateInterval": 60, // Update this one every 60 seconds. Otherwise, default to 30 minute update interval.
         "reserveTokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
         "reserveTokenUuid": "e1f698bf-cb85-5405-b563-14774af14bf1",
         "reserveTokenDecimals": 18,
         "poolTokenAddress": "0x2a1530C4C41db0B0b2bB646CB5Eb1A67b7158667",
         "poolTokenUuid": "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87",
+        "poolTokenDecimals": 18
+    },
+    {
+        "name": "Uniswap: Wrapped BTC",
+        "type": "uniswap",
+        "reserveTokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "reserveTokenUuid": "0486cb78-9392-5ff0-a790-03843d79b073",
+        "reserveTokenDecimals": 8,
+        "poolTokenAddress": "0x4d2f5cFbA55AE412221182D8475bC85799A5644b",
+        "poolTokenUuid": "43b7e3fb-86ea-595e-b3df-cda91181881d",
         "poolTokenDecimals": 18
     }
 ]

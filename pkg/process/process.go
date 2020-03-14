@@ -1,6 +1,7 @@
 package process
 
 import (
+	"time"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
 )
@@ -32,6 +33,7 @@ func ProcessAssets(assetItems []root.ImportItem) (map[string]root.ReserveExchang
 		}
 		resultantObject := root.ReserveExchangeRate{
 			Type: item.Type,
+			LastUpdated: time.Now().Unix(),
 			ReserveRates: returnItems,
 		}
 		outputMap[item.PoolTokenUuid] = resultantObject

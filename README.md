@@ -10,12 +10,12 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 - [ ] Handle compound assets.
 - [ ] Handle compound-ether asset (cETH => its different because its not an erc20 token).
 - [ ] Figure out caching on AWS.
-- [ ] Figure out setting up timers to handle time events.
+- [x] Figure out setting up timers to handle timing.
 
 ### To run:
 `cd app && go build && ./app`
 
-We still need to handle this info to cache it, but this will log out [here](https://github.com/MyCryptoHQ/DeFiReserveMapper/blob/master/app/main.go#L34) an object that looks like this:
+We still need to handle this info to cache it, but this will print out [here](https://github.com/MyCryptoHQ/DeFiReserveMapper/blob/master/outputFile.json) an object that looks like this:
 ```
 {
   'UUID OF POOL TOKEN': {
