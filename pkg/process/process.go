@@ -1,6 +1,7 @@
 package process
 
 import (
+	"math/big"
 	"time"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
@@ -14,7 +15,7 @@ func ProcessAssets(assetItems []root.ImportItem) (map[string]root.ReserveExchang
 		switch item.Type {
 		case "uniswap":
 			poolTotalReserveSupply, err := FetchPoolTotalSupply(client, item)
-			if err == nil {
+			if err == nil || poolTotalReserveSupply == big.NewInt(0) {
 				uniswapETHRate, err := BuildUniswapETHReserveRate(client, item, poolTotalReserveSupply)
 				if err == nil {
 					rateItem :=  root.ReserveExchangeRatesObject{

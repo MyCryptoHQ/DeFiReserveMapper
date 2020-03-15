@@ -540,16 +540,6 @@
         "poolTokenDecimals": 18
     },
     {
-        "name": "Uniswap: Paxos Gold",
-        "type": "uniswap",
-        "reserveTokenAddress": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
-        "reserveTokenUuid": "b7b4cc77-fb11-56d7-86e1-cd21165b4370",
-        "reserveTokenDecimals": 18,
-        "poolTokenAddress": "0x0d2E1a84638bD1B6c0C260c758c39451D4587be1",
-        "poolTokenUuid": "283aa7a9-4251-51dd-9aa9-c5c3f3fd77f2",
-        "poolTokenDecimals": 18
-    },
-    {
         "name": "Uniswap: Pinakion",
         "type": "uniswap",
         "reserveTokenAddress": "0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d",

@@ -1,43 +1,1303 @@
 {
-    "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87": {
+    "0039e50a-bab5-52fc-a48f-43f36410a87a": {
         "type": "uniswap",
-        "lastUpdated": 1584226077,
+        "lastUpdated": 1584233109,
         "reserveRates": [
             {
                 "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
-                "rate": "1.375632492674674"
+                "rate": "1.5928313498390032"
+            },
+            {
+                "assetId": "4451ce86-8299-5e38-8495-e24225c28e59",
+                "rate": "6293.2785077897615"
+            }
+        ]
+    },
+    "021ce881-6817-55b1-a92c-ee824b5646b5": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2899325314242618"
+            },
+            {
+                "assetId": "3c348242-f1b8-5372-8b2a-5a862d7205c4",
+                "rate": "141.80933020100898"
+            }
+        ]
+    },
+    "03d27066-3dd2-5f4b-abd4-6284d842fbbd": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6317931028678342"
+            },
+            {
+                "assetId": "fde4caf7-0e9d-56b7-ace1-975f09349353",
+                "rate": "5384.525208078047"
+            }
+        ]
+    },
+    "0cbb8ae5-f084-5bc8-9d95-9efaf7e36dba": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.275038640195949"
+            },
+            {
+                "assetId": "7f4d2f19-9a76-5930-b63b-ac9b0afe6201",
+                "rate": "261.06289250955734"
+            }
+        ]
+    },
+    "0cfef5bc-7370-5a17-b45e-d08037c856e0": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "685.2086746111445"
+            },
+            {
+                "assetId": "2fdbfe5d-5e3a-5fe0-bcaa-42810867d1e6",
+                "rate": "1.3274081560692303e+06"
+            }
+        ]
+    },
+    "0fd4fd95-c227-5ad7-b757-e3936263f466": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5425301348611677"
+            },
+            {
+                "assetId": "778541d2-65e6-5c57-b083-aa3129eb91c8",
+                "rate": "440.10628039421687"
+            }
+        ]
+    },
+    "106732d8-b1ab-5515-816b-b165ed129dd3": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5251322636002806"
+            },
+            {
+                "assetId": "77545d72-6e82-5169-a2b4-c1f23ee212aa",
+                "rate": "8.154171968576613e+06"
+            }
+        ]
+    },
+    "1391f2f1-c924-55b4-83e8-b7af95c40c3d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5161625235103254"
+            },
+            {
+                "assetId": "710be2c3-3d37-5f00-9f9c-367e3ba3aa05",
+                "rate": "49368.86376068186"
+            }
+        ]
+    },
+    "1741b04b-4e9d-54c4-8c46-f17ce246d6ee": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.9867529028658198"
+            },
+            {
+                "assetId": "7bd0761b-df34-5f0d-ac6e-403c93c5bebd",
+                "rate": "4121.334361517595"
+            }
+        ]
+    },
+    "180a5aee-0bc3-5737-9127-e9306446fd2f": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.0868513771665984"
+            },
+            {
+                "assetId": "238fd921-e8d8-5ce9-88ae-54e01c7dbfb5",
+                "rate": "2.7189933097612675"
+            }
+        ]
+    },
+    "1d94084b-5140-55b3-86b2-456291d1aab3": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3863589597763974"
+            },
+            {
+                "assetId": "685f1c7f-2d31-56c2-ae80-9cd433aeb0e1",
+                "rate": "170.02311586180087"
+            }
+        ]
+    },
+    "21e70510-5492-512b-95e1-72348b4a1a6d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "5.876855745491728"
+            },
+            {
+                "assetId": "982a5701-8e78-57e9-bd3e-a070479286ed",
+                "rate": "2.9204937262273676"
+            }
+        ]
+    },
+    "2220121c-1a7f-5342-abe8-5ed5b32f83ab": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.9672927311231103"
+            },
+            {
+                "assetId": "4451da87-f76d-5e89-b88b-e27230b069a0",
+                "rate": "6553.24678576911"
+            }
+        ]
+    },
+    "227adde0-9df8-55e5-8445-10c23fd595d6": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6627458869228541"
+            },
+            {
+                "assetId": "5fd16095-c778-5073-9fc9-b1d7cb61d5aa",
+                "rate": "992.5429780487301"
+            }
+        ]
+    },
+    "26f97811-015b-50f9-be86-de591b8ff31c": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.650261540642887"
+            },
+            {
+                "assetId": "51c80f7c-3a5f-5f21-9347-16380856e145",
+                "rate": "8521.616827496548"
+            }
+        ]
+    },
+    "2a564380-964a-5f5a-8ca8-17d5d37d4b2c": {
+        "type": "uniswap",
+        "lastUpdated": 1584233112,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6191854220152977"
+            },
+            {
+                "assetId": "36a94c95-ec51-5e0f-b254-415e31d1c3a7",
+                "rate": "483.1698533262571"
+            }
+        ]
+    },
+    "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.39293565581541"
             },
             {
                 "assetId": "e1f698bf-cb85-5405-b563-14774af14bf1",
-                "rate": "162.13193174135623"
+                "rate": "160.41487910763837"
+            }
+        ]
+    },
+    "2d616333-8e53-5703-9a82-f992263a671c": {
+        "type": "uniswap",
+        "lastUpdated": 1584233112,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.0192549297374842"
+            },
+            {
+                "assetId": "7e6f798a-2e6a-5b4c-b7e4-ef6a12cc4d5a",
+                "rate": "1.0223576046973584"
+            }
+        ]
+    },
+    "2e5729f2-d6cb-5e38-9c65-e96a9c5cca07": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.7673207098253582"
+            },
+            {
+                "assetId": "6c67c161-9c44-5ba7-85ec-7d91ac2c5e80",
+                "rate": "1271.4563320145342"
+            }
+        ]
+    },
+    "40aa5b7d-6a6e-548d-acff-82f3e0b29ab1": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3641321626494145"
+            },
+            {
+                "assetId": "528c37bf-1b7f-5740-a958-9cb445e66582",
+                "rate": "1362.1926199664474"
+            }
+        ]
+    },
+    "433ace33-756b-508e-9e52-b8b9abe39752": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2863396516172307"
+            },
+            {
+                "assetId": "d06a2375-0c17-52a5-9bb4-c03399abf407",
+                "rate": "6.971753700224007"
             }
         ]
     },
     "43b7e3fb-86ea-595e-b3df-cda91181881d": {
         "type": "uniswap",
-        "lastUpdated": 1584226077,
+        "lastUpdated": 1584233111,
         "reserveRates": [
             {
                 "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
-                "rate": "1.2277679673375648"
+                "rate": "1.2265949823921658"
             },
             {
                 "assetId": "0486cb78-9392-5ff0-a790-03843d79b073",
-                "rate": "2.8939650000000004e-12"
+                "rate": "0.0289687871135962"
+            }
+        ]
+    },
+    "44fabad2-d9da-50b3-b46b-e37466fd9751": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.8873771993643693"
+            },
+            {
+                "assetId": "d3230312-cacb-52e6-a849-8bbf6e8142dd",
+                "rate": "0.4698314809728079"
             }
         ]
     },
     "459a37b4-ad23-5c2b-8030-031eeff78453": {
         "type": "uniswap",
-        "lastUpdated": 1584226117,
+        "lastUpdated": 1584233102,
         "reserveRates": [
             {
                 "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
-                "rate": "1.7123747399070857"
+                "rate": "1.7249581588330112"
             },
             {
                 "assetId": "53306efd-fb16-5e9a-b6d0-fc0e9713da40",
-                "rate": "201.21685905110408"
+                "rate": "200.02450985619635"
+            }
+        ]
+    },
+    "4ce970a1-2f8d-5d83-9c6f-532d568ec254": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.9272536978997998"
+            },
+            {
+                "assetId": "d4a935c9-92ba-5e8d-b66f-c19e704b0c8a",
+                "rate": "349.9999160082711"
+            }
+        ]
+    },
+    "4dd376ed-f4af-56ea-86d9-c92454f024d6": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1558636374178912"
+            },
+            {
+                "assetId": "070ce3cb-5a08-5c45-9f64-8fe1bea6e852",
+                "rate": "564.3508045841264"
+            }
+        ]
+    },
+    "4eb699dc-5dce-502d-9a23-194a58aa1450": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.9176890396559357"
+            },
+            {
+                "assetId": "7993794d-4f07-5596-825d-7d1c8a699f50",
+                "rate": "0.021848091422777518"
+            }
+        ]
+    },
+    "50b83702-2652-5e12-8585-cd8014641b74": {
+        "type": "uniswap",
+        "lastUpdated": 1584233100,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1344950676786816"
+            },
+            {
+                "assetId": "9454eb02-dda1-53d1-85f0-f6faa6c89267",
+                "rate": "130.9760441345517"
+            }
+        ]
+    },
+    "528a02b4-c426-576c-9326-19939a3b2714": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.8279834655538845"
+            },
+            {
+                "assetId": "432d8898-ad05-5f2b-a731-2aa7865943a4",
+                "rate": "349673.7895728149"
+            }
+        ]
+    },
+    "5468e6f2-c8cc-5e78-8dd1-a7f6751112b5": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5493301868667608"
+            },
+            {
+                "assetId": "9f563cf7-f883-5459-845e-5021a2f58629",
+                "rate": "4716.667524419315"
+            }
+        ]
+    },
+    "59c11c4d-e32c-55a2-b4c7-1f5ca5b4f0ba": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.8892971008719469"
+            },
+            {
+                "assetId": "e34bb9ff-47be-503b-956b-30d4b3f3507b",
+                "rate": "882.9445984593424"
+            }
+        ]
+    },
+    "5b6de87e-32af-51db-af21-d4a31b2fa6e2": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.367097457887107"
+            },
+            {
+                "assetId": "c90311b2-90b2-5bf4-8d93-e06bd7cfb666",
+                "rate": "168.67016555537532"
+            }
+        ]
+    },
+    "5faceaf1-e3f7-57b7-80f6-eeab68e09c6d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3456073576152314"
+            },
+            {
+                "assetId": "55d07f92-9563-504b-86bc-883160078712",
+                "rate": "130.8052380646262"
+            }
+        ]
+    },
+    "609a348b-133a-50d3-a497-474137add6da": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.18467649515480142"
+            },
+            {
+                "assetId": "34eeb9ed-4225-515b-9cb1-d93fd16d78c2",
+                "rate": "181709.67445376742"
+            }
+        ]
+    },
+    "6a8057fe-cb66-5195-8f0b-51677d820090": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1419426603746905"
+            },
+            {
+                "assetId": "2ed3ebcd-2d4f-52f7-b12b-54360ed49b55",
+                "rate": "139.43338717389665"
+            }
+        ]
+    },
+    "6de1cff6-671e-58de-966f-8f8d2fd711fd": {
+        "type": "uniswap",
+        "lastUpdated": 1584233112,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.8852755457742845"
+            },
+            {
+                "assetId": "07d14656-bb5a-5b83-a240-ad61892df119",
+                "rate": "104.22017226948196"
+            }
+        ]
+    },
+    "70fe83de-5c6d-5f96-9d90-0889a7559e40": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2176708211967409"
+            },
+            {
+                "assetId": "3dca14ba-da4f-5734-a0a0-a50bb2f0dc6c",
+                "rate": "137.50976428442155"
+            }
+        ]
+    },
+    "718113cb-d087-528e-8092-7538dfacb9fe": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.8613833637425623"
+            },
+            {
+                "assetId": "30497635-d6da-53e1-be28-7e291e458c4f",
+                "rate": "18556.81304792666"
+            }
+        ]
+    },
+    "72039d77-81a0-5f22-bb92-548923298b10": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.7511113920342193"
+            },
+            {
+                "assetId": "97ae2210-28d0-5dec-a58b-5b90658fc3c1",
+                "rate": "42080.93636466237"
+            }
+        ]
+    },
+    "7261743f-a97f-5bf8-b8c2-b4234ea91fe6": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.551265074002559"
+            },
+            {
+                "assetId": "b624cbe8-d9a2-53fa-84ba-00589010c840",
+                "rate": "659.8752119891741"
+            }
+        ]
+    },
+    "73026704-b476-5cd9-ba73-49d6646ecf9e": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3870041153154316"
+            },
+            {
+                "assetId": "45cc0791-d3e8-548b-b93f-56141e00f45e",
+                "rate": "4216.972292683664"
+            }
+        ]
+    },
+    "73165fb5-4b61-59ed-82a7-baf8420c7bda": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1418611507546443"
+            },
+            {
+                "assetId": "65e92849-dc9f-541a-a548-335e10299120",
+                "rate": "5271.030687633614"
+            }
+        ]
+    },
+    "74c77aac-bc10-55d3-9462-89644149b819": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.51285100720311"
+            },
+            {
+                "assetId": "1d8a2b3b-12c9-5fef-8e46-68ce1092afe8",
+                "rate": "2424.4766079456454"
+            }
+        ]
+    },
+    "7561fc7f-621e-5666-b423-5ad4b383c95a": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.42790382527392923"
+            },
+            {
+                "assetId": "8e194419-13c6-5fc6-8a90-75a65e8c79f2",
+                "rate": "4765.002741390706"
+            }
+        ]
+    },
+    "79a2ad75-3ead-5f2f-8e77-9801b81180a4": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.0233579021238195"
+            },
+            {
+                "assetId": "d017a1e8-bdd3-5c32-8866-da258f75b0e9",
+                "rate": "16.957516139589462"
+            }
+        ]
+    },
+    "7b299a00-1792-5201-a68f-5806ddf9bc13": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.259986145960633"
+            },
+            {
+                "assetId": "24ef4e81-4825-5e82-98b1-933904c954d4",
+                "rate": "88275.74304328255"
+            }
+        ]
+    },
+    "7c4ff905-8d4d-5832-898e-ac7d0965aaf6": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.19528781616791227"
+            },
+            {
+                "assetId": "b142d2c4-16f3-5b29-b260-1144d4895283",
+                "rate": "24251.26738298269"
+            }
+        ]
+    },
+    "7f1a87d4-7f88-5fcc-a9cc-db9fa947cf02": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.4144511122928687"
+            },
+            {
+                "assetId": "14c6fcd7-1309-5d31-9ba5-6058cb9057b0",
+                "rate": "154.40709667207105"
+            }
+        ]
+    },
+    "83ee102e-0b80-53bf-998e-7f4a7f77e481": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.0603938145559704"
+            },
+            {
+                "assetId": "82fedc10-0c85-5cd9-a182-0f854b44c81f",
+                "rate": "1347.4958262084738"
+            }
+        ]
+    },
+    "870be09a-55f5-56de-be20-9937050f2572": {
+        "type": "uniswap",
+        "lastUpdated": 1584233100,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5583727308600603"
+            },
+            {
+                "assetId": "06ae8449-3582-5977-84e9-e45447325c17",
+                "rate": "905.05003748317"
+            }
+        ]
+    },
+    "89167425-3f05-504e-88c6-2006273fcf7a": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.9018193054512853"
+            },
+            {
+                "assetId": "d50f5ec4-0f85-586f-88bc-f26335ac20ec",
+                "rate": "834.9864799602982"
+            }
+        ]
+    },
+    "8b89272d-341b-5dd9-ae49-a5f456134199": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.3734692415857769"
+            },
+            {
+                "assetId": "7c51ee31-501e-5e54-9f93-9180ba37fef1",
+                "rate": "803.2085457868684"
+            }
+        ]
+    },
+    "8cd31622-b42d-5e6f-8cbe-bc637efa912d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.48825915059778224"
+            },
+            {
+                "assetId": "66e28eb6-b405-5440-a277-bd4450f94537",
+                "rate": "16065.7566702461"
+            }
+        ]
+    },
+    "8e55d260-a85d-53c8-aa34-61a8cfc078df": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.8598252550157346"
+            },
+            {
+                "assetId": "2db84be6-32ae-50e3-81b8-59694bef84a1",
+                "rate": "503.01459366728403"
+            }
+        ]
+    },
+    "8fca9c14-a87a-5ba8-a368-9029a0975f03": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.9964361830549078"
+            },
+            {
+                "assetId": "c284a039-7fb7-5ff8-9d76-22e1321b92f6",
+                "rate": "1270.1407125262654"
+            }
+        ]
+    },
+    "95b8e380-2c43-5a0a-ac3a-39241476c959": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5245118950734775"
+            },
+            {
+                "assetId": "8d0d2e0e-d592-5ad1-a194-6c497ed44c1b",
+                "rate": "205987.88690549982"
+            }
+        ]
+    },
+    "97a7bed6-0d39-57bf-a5ac-17c7adfa709b": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.512723904348288"
+            },
+            {
+                "assetId": "8138f106-9d3a-5b37-9e0e-ad48e9ee2109",
+                "rate": "387.34097056925316"
+            }
+        ]
+    },
+    "9820d87f-14c5-5d85-9e6e-a9d0364fe231": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.7997675034047834"
+            },
+            {
+                "assetId": "ebc2c6b4-0e52-5a81-8255-4a0671cbccaa",
+                "rate": "1926.2411417040935"
+            }
+        ]
+    },
+    "990c2a73-781c-5412-ae55-702b23c6f5fd": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6214517751628709"
+            },
+            {
+                "assetId": "0b866a3b-5816-554f-b84f-46dd66334d13",
+                "rate": "14164.45994044188"
+            }
+        ]
+    },
+    "a020c62d-151f-53f8-9cd2-14b0aafc1a06": {
+        "type": "uniswap",
+        "lastUpdated": 1584233112,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.449227859335371"
+            },
+            {
+                "assetId": "647c9d70-c139-5d24-850b-a3e313c689fb",
+                "rate": "8179.076015548397"
+            }
+        ]
+    },
+    "a2c4fca6-ec18-55e2-96d8-fd8c8e9ae813": {
+        "type": "uniswap",
+        "lastUpdated": 1584233101,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.48536619656618163"
+            },
+            {
+                "assetId": "5f82a198-c58b-5fce-8973-42c818ccb05f",
+                "rate": "109.31839466113071"
+            }
+        ]
+    },
+    "ad0efbaa-bd94-5427-baff-c83b5e8319a2": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.9982251540367338"
+            },
+            {
+                "assetId": "f1ca8ca6-307f-5f04-bccb-5a2144551695",
+                "rate": "21.451715271032473"
+            }
+        ]
+    },
+    "ad4988d0-ade1-5d4d-8143-c9dde2ed140d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.41764614227644203"
+            },
+            {
+                "assetId": "a4df4d34-0598-5bbf-9d24-21dea629ea12",
+                "rate": "4745.704885043938"
+            }
+        ]
+    },
+    "ade64d83-fd92-58ab-80ab-df336d4b290f": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.9102145855970862"
+            },
+            {
+                "assetId": "6f3dc51e-1769-5b6d-beb1-63f24d977ac7",
+                "rate": "16621.868182686267"
+            }
+        ]
+    },
+    "b456c951-f251-5494-886e-91c9f3461c71": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3544359040220428"
+            },
+            {
+                "assetId": "25c88136-cf18-59ed-9599-ea1fac2ecdb0",
+                "rate": "21789.120748500023"
+            }
+        ]
+    },
+    "b4692e52-6de2-5210-bc0e-1d4d77c11525": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "2.295777834828679"
+            },
+            {
+                "assetId": "1c77b322-a88c-57cc-b956-78c2bc17c360",
+                "rate": "13233.36199840007"
+            }
+        ]
+    },
+    "c90bcfa5-9b23-5add-bfa6-98cc0919eda5": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.4767873823756859"
+            },
+            {
+                "assetId": "6c1747fa-b66f-5841-ad86-fbc5279ab5db",
+                "rate": "38500.79928336957"
+            }
+        ]
+    },
+    "ca27272a-891e-577d-ae75-f8efe4d55231": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.0001664348518233"
+            },
+            {
+                "assetId": "19c48978-796d-55c6-a0e2-9999d1592728",
+                "rate": "1.01725813408224"
+            }
+        ]
+    },
+    "ce337576-e033-5be4-86ee-bd7ed750ddff": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.7650249068304085"
+            },
+            {
+                "assetId": "2c650f69-9793-53c6-a48c-2003b6e4b095",
+                "rate": "642.8866965860261"
+            }
+        ]
+    },
+    "cf3aa546-dad1-51e8-ba3f-59934e6af29d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1933297174927056"
+            },
+            {
+                "assetId": "a9cc6884-14bd-53b6-abcd-f9b56b60463d",
+                "rate": "6824.788294785781"
+            }
+        ]
+    },
+    "d08f92cc-4121-5351-a43e-8b441b3ebe18": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6703282378421727"
+            },
+            {
+                "assetId": "b4ebfad5-090f-534e-aa26-e77035adc0fc",
+                "rate": "11908.781453073165"
+            }
+        ]
+    },
+    "dcb18292-ea7d-5c54-b3fe-2c996f07e2c6": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.49244919905907397"
+            },
+            {
+                "assetId": "9fad8ea0-256e-55e7-9129-851b89c9caaa",
+                "rate": "24.455567798056407"
+            }
+        ]
+    },
+    "dfe672db-4da0-573b-91c3-5a2e2b35d041": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2260014783936475"
+            },
+            {
+                "assetId": "459a37b4-ad23-5c2b-8030-031eeff78453",
+                "rate": "0.3738204713251534"
+            }
+        ]
+    },
+    "e0c874b0-ecb5-5ebb-979a-8cf26a7c007f": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.0149160157494457"
+            },
+            {
+                "assetId": "59f607ad-787d-5373-ad4e-4b6fd5a99603",
+                "rate": "844.3137697071975"
+            }
+        ]
+    },
+    "e39fd4ae-e817-51a9-a712-b821c93f6a63": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6451250131372641"
+            },
+            {
+                "assetId": "0765f5fa-f31e-5aa9-9122-c20b90d686f3",
+                "rate": "128.31408350977125"
+            }
+        ]
+    },
+    "e729efdf-fab2-518e-b07f-0cff165cf304": {
+        "type": "uniswap",
+        "lastUpdated": 1584233105,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "3.304554563879986"
+            },
+            {
+                "assetId": "c0ae47d5-f020-5ea8-9886-522d3af70845",
+                "rate": "186.5943060207833"
+            }
+        ]
+    },
+    "eaa1f49e-1e96-5344-b89b-ecb87f6b2d9d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1426144236005291"
+            },
+            {
+                "assetId": "4ea90082-23fe-55e5-8b4a-a23cda228e65",
+                "rate": "457.9215170413944"
+            }
+        ]
+    },
+    "eaac5c67-473f-5154-98ca-c431340dc52c": {
+        "type": "uniswap",
+        "lastUpdated": 1584233109,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "2.381639458177763"
+            },
+            {
+                "assetId": "84d3b878-2f62-51c3-bc50-432d62629cd7",
+                "rate": "6.104439101707791"
+            }
+        ]
+    },
+    "ebad2b96-e8ff-5a3c-b68d-5ef21963d402": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1708864397097973"
+            },
+            {
+                "assetId": "8adc03e6-032d-5f36-b521-4da4c863493b",
+                "rate": "194.8215619851706"
+            }
+        ]
+    },
+    "ed8c1b4d-bc04-54c8-bc28-70da09cc3f88": {
+        "type": "uniswap",
+        "lastUpdated": 1584233106,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.7873282229675558"
+            },
+            {
+                "assetId": "c07fe952-47cc-591a-be8a-2313965b5d00",
+                "rate": "4040.999271256102"
+            }
+        ]
+    },
+    "ef9be964-a40a-5000-9c72-43ddaebcec2f": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.938177795642219"
+            },
+            {
+                "assetId": "dd2fcf4c-a6bd-5f51-92a0-0912394bc2c7",
+                "rate": "456.5013540541852"
+            }
+        ]
+    },
+    "f05be60f-c80f-5603-bedb-6d0a18d558c9": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5330685570219794"
+            },
+            {
+                "assetId": "581d9bc9-0697-5610-9821-eecac607c063",
+                "rate": "1058.4073107802565"
+            }
+        ]
+    },
+    "f0933b0f-5410-5338-8979-df335beb3b62": {
+        "type": "uniswap",
+        "lastUpdated": 1584233103,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5865010710492068"
+            },
+            {
+                "assetId": "3cb0bb0a-17db-5453-b99f-f0de3dfc5d4a",
+                "rate": "1981.7297243555556"
+            }
+        ]
+    },
+    "f140f96e-5aa7-548a-b47a-087469194da1": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.37408709625011927"
+            },
+            {
+                "assetId": "d10e624d-9e4b-5af6-b4de-5f31784e1538",
+                "rate": "9.30076466837322"
+            }
+        ]
+    },
+    "f2d08ecc-d32c-5fae-8002-c477a47d632d": {
+        "type": "uniswap",
+        "lastUpdated": 1584233104,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.7995893032549037"
+            },
+            {
+                "assetId": "3d10c6ef-249c-525a-8725-d7e7b7495948",
+                "rate": "10.77532042480784"
+            }
+        ]
+    },
+    "f32b90a6-4325-5c19-9652-86472a0afc7c": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.18557263335591304"
+            },
+            {
+                "assetId": "f79e8a82-76b3-5d5c-a3ee-be6fb8c5cc8a",
+                "rate": "3041.1016902969955"
+            }
+        ]
+    },
+    "f34348a9-47a3-5d0f-8623-e093ae5beba2": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.5604045642732765"
+            },
+            {
+                "assetId": "0c7a799d-c135-5ce5-ae37-b5d960510a18",
+                "rate": "3954.2237941924136"
+            }
+        ]
+    },
+    "f3815391-fc39-5a35-8c38-a07edca3faca": {
+        "type": "uniswap",
+        "lastUpdated": 1584233107,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.6330494217901628"
+            },
+            {
+                "assetId": "8e0bdec8-02cd-523a-9e73-cb5ee27ae34a",
+                "rate": "7949.068008144206"
+            }
+        ]
+    },
+    "f3df8c39-1633-558d-8a17-02f93a1b466b": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.3319893200224198"
+            },
+            {
+                "assetId": "fa0c62a2-87a7-5da0-b0b2-9cc356992428",
+                "rate": "246.28953447747142"
+            }
+        ]
+    },
+    "f7a4cf7a-6d6c-5ab5-b42a-ff173ee8a5d7": {
+        "type": "uniswap",
+        "lastUpdated": 1584233108,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.31727863761173775"
+            },
+            {
+                "assetId": "192cb8d5-e5ae-5635-9eea-80b079969e90",
+                "rate": "2117.890664233707"
+            }
+        ]
+    },
+    "f9086e7d-c815-58ca-8acf-30a2f2e65f08": {
+        "type": "uniswap",
+        "lastUpdated": 1584233110,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.1893869037655718"
+            },
+            {
+                "assetId": "d0f5269a-78c6-5734-a6a7-0c9b46107582",
+                "rate": "160.80706286536903"
+            }
+        ]
+    },
+    "fb27dbbc-fdfe-5c68-9db9-be4371ee2543": {
+        "type": "uniswap",
+        "lastUpdated": 1584233102,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.6910726574788137"
+            },
+            {
+                "assetId": "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3",
+                "rate": "9240.872098755695"
+            }
+        ]
+    },
+    "ff235e5f-d628-5b00-b44a-1cc67cd72d37": {
+        "type": "uniswap",
+        "lastUpdated": 1584233111,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2511278514293496"
+            },
+            {
+                "assetId": "36e67cee-e26f-51cb-8d63-a7b169fe9848",
+                "rate": "151.03046772475514"
             }
         ]
     }

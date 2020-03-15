@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Uniswap: Compound Sai",
+        "type": "uniswap",
+        "updateInterval": 5,
+        "reserveTokenAddress": "0xF5DCe57282A584D2746FaF1593d3121Fcac444dC",
+        "reserveTokenUuid": "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3",
+        "reserveTokenDecimals": 8,
+        "poolTokenAddress": "0x45A2FDfED7F7a2c791fb1bdF6075b83faD821ddE",
+        "poolTokenUuid": "fb27dbbc-fdfe-5c68-9db9-be4371ee2543",
+        "poolTokenDecimals": 18
+    },
+    {
+        "name": "Uniswap: Chai",
+        "type": "uniswap",
+        "updateInterval": 5,
+        "reserveTokenAddress": "0x06AF07097C9Eeb7fD685c692751D5C66dB49c215",
+        "reserveTokenUuid": "3dca14ba-da4f-5734-a0a0-a50bb2f0dc6c",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0x6C3942B383bc3d0efd3F36eFa1CBE7C8E12C8A2B",
+        "poolTokenUuid": "70fe83de-5c6d-5f96-9d90-0889a7559e40",
+        "poolTokenDecimals": 18
+    },
+    {
+        "name": "Uniswap: GRID Token",
+        "type": "uniswap",
+        "updateInterval": 5,
+        "reserveTokenAddress": "0x12B19D3e2ccc14Da04FAe33e63652ce469b3F2FD",
+        "reserveTokenUuid": "1d8a2b3b-12c9-5fef-8e46-68ce1092afe8",
+        "reserveTokenDecimals": 12,
+        "poolTokenAddress": "0x4B17685b330307C751B47f33890c8398dF4Fe407",
+        "poolTokenUuid": "74c77aac-bc10-55d3-9462-89644149b819",
+        "poolTokenDecimals": 18
+    }
+]

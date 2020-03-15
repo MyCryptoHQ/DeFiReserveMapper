@@ -35,12 +35,15 @@ func BuildUniswapERC20ReserveRate(ETHClient *ethclient.Client, importedItem root
 	if err != nil {
 		return nil, err
 	}
+	
 	floatPoolReserveERC20 := new(big.Float).SetInt(poolReserveERC20)
 	floatPoolTotalSupply := new(big.Float).SetInt(poolReserveTotalSupply)
 
+	multiplier := big.NewFloat(math.Pow10(int(18-importedItem.ReserveTokenDecimals)))
 	precision, _ := new(big.Float).Quo(big.NewFloat(1), big.NewFloat(math.Pow10(int(18)))).Float64()
 	
-	outputRate, _ := new(big.Float).Quo(floatPoolReserveERC20, floatPoolTotalSupply).Float64()
+	outputRateBase := new(big.Float).Quo(floatPoolReserveERC20, floatPoolTotalSupply)
+	outputRate, _ := new(big.Float).Mul(multiplier, outputRateBase).Float64()
 	truncatedRate := Truncate(outputRate, precision)
 	return big.NewFloat(truncatedRate), nil
 }

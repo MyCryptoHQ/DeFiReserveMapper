@@ -16,7 +16,7 @@ func BalanceOf(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, er
 	if err != nil {
 		return big.NewInt(0), err
 	}
-	return balance, err
+	return balance, nil
 }
 
 func TotalSupply(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
@@ -30,5 +30,5 @@ func TotalSupply(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, 
 	if err != nil {
 		return big.NewInt(0), err
 	}
-	return totalSupply, err
+	return totalSupply, nil
 }
