@@ -2,9 +2,6 @@
 /app/app
 bin/
 
-# zip files
-*.zip
-
 # terraform
 .terraform
 terraform.tfstate
