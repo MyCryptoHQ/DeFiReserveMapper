@@ -4,14 +4,15 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/mycryptohq/DeFiReserveMapper/pkg"
-	"github.com/mycryptohq/DeFiReserveMapper/pkg/process"
-	"github.com/mycryptohq/DeFiReserveMapper/pkg/s3"
-	"github.com/tkanos/gonfig"
 	"io/ioutil"
 	"log"
 	"os"
 	"time"
+
+	"github.com/mycryptohq/DeFiReserveMapper/pkg"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/process"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/s3"
+	"github.com/tkanos/gonfig"
 )
 
 type Configuration struct {
