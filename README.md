@@ -9,8 +9,10 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 ~- [ ] Figure out bottlenecking requests so we don't spam the node and get blocked~ _I don't think we need to do this actually_
 - [x] Handle compound assets.
 - [x] Handle uniswap assets.
-- [ ] Figure out caching on AWS.
+- [x] Figure out caching on AWS.
 - [x] Figure out setting up handling of update intervals.
+- [ ] Deploy updater?
+- [ ] Set up api endpoint?
 
 ### To run:
 `cd app && go build && ./app`
