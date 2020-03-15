@@ -11,10 +11,10 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 - [x] Handle uniswap assets.
 - [x] Figure out caching on AWS.
 - [x] Figure out setting up handling of update intervals.
-- [ ] Deploy updater?
+- [x] Deploy updater
 - [ ] Set up api endpoint?
 
-### To run:
+### To run locally:
 `cd app && go build && ./app`
 
 ### To deploy:
@@ -22,6 +22,10 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
     make deploy
     cd terraform
     terraform apply
+```
+### To rm deployment:
+```
+    terraform destroy
 ```
 
 We still need to handle this info to cache it, but this will print out [here](https://github.com/MyCryptoHQ/DeFiReserveMapper/blob/master/outputFile.json) an object that looks like this:
