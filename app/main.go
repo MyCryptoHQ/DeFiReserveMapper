@@ -1,15 +1,33 @@
 package main
 
 import (
-	"time"
-	"log"
-	"fmt"
-	"os"
-	"io/ioutil"
+	"bytes"
 	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
+	"time"
+
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/process"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/s3"
+	"github.com/tkanos/gonfig"
 )
+
+type Configuration struct {
+	Bucket string
+	Region string
+}
+
+var config Configuration
+
+func init() {
+	err := gonfig.GetConf("../config.json", &config)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
 
 func main() {
 	// Fetch input file
@@ -27,10 +45,17 @@ func main() {
 	}
 	// Fetch output file
 	outputItems := make(map[string]root.ReserveExchangeRate)
-	outputFile, err := os.Open("../outputFile.json")
-	if err != nil {
-		fmt.Println("Couldn't open output file. Assume this is first run.")
+
+	outputFile := "outputFile.json"
+
+	// Download output file from s3
+	if err := s3.Download(config.Bucket, config.Region, outputFile); err != nil {
+		log.Println("Couldn't open output file. Assume this is first run.")
 	} else {
+		outputFile, err := os.Open(outputFile)
+		if err != nil {
+			log.Printf("Couldn't open %s", outputFile.Name())
+		}
 		defer outputFile.Close()
 		byteOutputFileValue, _ := ioutil.ReadAll(outputFile)
 		json.Unmarshal(byteOutputFileValue, &outputItems)
@@ -47,12 +72,14 @@ func main() {
 	mergedResults := mergeChanges(results, outputItems)
 	fmt.Printf("Updated %d pool tokens.\n", len(filteredItemsToProcess))
 	file, _ := json.MarshalIndent(mergedResults, "", "    ")
-	
-	// Write to output file
-	_ = ioutil.WriteFile("../outputFile.json", file, 0644)
+
+	// Upload to s3
+	if err := s3.Upload(config.Bucket, config.Region, outputFile, bytes.NewReader(file)); err != nil {
+		log.Println("Error uploading to s3", err)
+	}
 }
 
-func filterItemsToProcess(allInputItems []root.ImportItem, outputFileObject map[string]root.ReserveExchangeRate) ([]root.ImportItem) {
+func filterItemsToProcess(allInputItems []root.ImportItem, outputFileObject map[string]root.ReserveExchangeRate) []root.ImportItem {
 	var outputItemArray []root.ImportItem
 	for _, item := range allInputItems {
 		var updateInterval int64
@@ -63,14 +90,14 @@ func filterItemsToProcess(allInputItems []root.ImportItem, outputFileObject map[
 			updateInterval = int64(root.DefaultRefreshInterval)
 		}
 		outputItem, foundItem := outputFileObject[item.PoolTokenUuid]
-		if !foundItem || (currentTime - outputItem.LastUpdated >= updateInterval) {
+		if !foundItem || (currentTime-outputItem.LastUpdated >= updateInterval) {
 			outputItemArray = append(outputItemArray, item)
 		}
 	}
 	return outputItemArray
 }
 
-func mergeChanges(fetchedRateObject map[string]root.ReserveExchangeRate, outputFileObject map[string]root.ReserveExchangeRate) (map[string]root.ReserveExchangeRate) {
+func mergeChanges(fetchedRateObject map[string]root.ReserveExchangeRate, outputFileObject map[string]root.ReserveExchangeRate) map[string]root.ReserveExchangeRate {
 	keysArray := make([]string, len(fetchedRateObject))
 	i := 0
 	// Makes an array of keys from the fetched rate object
