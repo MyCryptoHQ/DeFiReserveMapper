@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/aws/aws-lambda-go/lambda"
 	"io/ioutil"
 	"log"
 	"os"
@@ -12,28 +13,18 @@ import (
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/process"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/s3"
-	"github.com/tkanos/gonfig"
 )
 
-type Configuration struct {
-	Bucket string
-	Region string
-}
+var (
+	bucket = os.Getenv("bucket")
+	region = os.Getenv("region")
+)
 
-var config Configuration
-
-func init() {
-	err := gonfig.GetConf("../config.json", &config)
-	if err != nil {
-		log.Fatal(err)
-	}
-}
-
-func main() {
+func handleRequest() {
 	// Fetch input file
-	jsonFile, err := os.Open("../test-assets.json")
+	jsonFile, err := os.Open("./test-assets.json")
 	if err != nil {
-		log.Fatalf("Couldn't open assets config file")
+		log.Fatal("Couldn't open assets config file", err)
 	}
 	defer jsonFile.Close()
 	byteValue, _ := ioutil.ReadAll(jsonFile)
@@ -46,11 +37,11 @@ func main() {
 	// Fetch output file
 	outputItems := make(map[string]root.ReserveExchangeRate)
 
-	outputFile := "outputFile.json"
+	outputFile := "/tmp/outputFile.json"
 
 	// Download output file from s3
-	if err := s3.Download(config.Bucket, config.Region, outputFile); err != nil {
-		log.Println("Couldn't open output file. Assume this is first run.")
+	if err := s3.Download(bucket, region, outputFile); err != nil {
+		log.Println("\nCouldn't open output file. Assume this is first run.")
 	} else {
 		outputFile, err := os.Open(outputFile)
 		if err != nil {
@@ -60,7 +51,6 @@ func main() {
 		byteOutputFileValue, _ := ioutil.ReadAll(outputFile)
 		json.Unmarshal(byteOutputFileValue, &outputItems)
 	}
-
 	// Filter to only include assets needed
 	filteredItemsToProcess := filterItemsToProcess(allItemsToProcess, outputItems)
 	results, err := process.ProcessAssets(filteredItemsToProcess)
@@ -70,13 +60,17 @@ func main() {
 
 	// Merge the results into old file, overwriting updated values
 	mergedResults := mergeChanges(results, outputItems)
+
 	fmt.Printf("Updated %d pool tokens.\n", len(filteredItemsToProcess))
 	file, _ := json.MarshalIndent(mergedResults, "", "    ")
 
 	// Upload to s3
-	if err := s3.Upload(config.Bucket, config.Region, outputFile, bytes.NewReader(file)); err != nil {
+	if err := s3.Upload(bucket, region, outputFile, bytes.NewReader(file)); err != nil {
 		log.Println("Error uploading to s3", err)
 	}
+}
+func main() {
+	lambda.Start(handleRequest)
 }
 
 func filterItemsToProcess(allInputItems []root.ImportItem, outputFileObject map[string]root.ReserveExchangeRate) []root.ImportItem {

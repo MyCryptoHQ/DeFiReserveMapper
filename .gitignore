@@ -1,4 +1,9 @@
+# binaries
 /app/app
+bin/
+
+# zip files
+*.zip
 
 # terraform
 .terraform

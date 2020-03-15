@@ -54,8 +54,8 @@ func Download(bucket, region, object string) error {
 			Key:    aws.String(object),
 		})
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Object %q not found in s3 bucket %v", object, err)
-		return nil
+		fmt.Fprintf(os.Stderr, "Object %q not found in s3 bucket - %v", object, err)
+		return err
 	}
 	log.Println("Downloaded", object, "from", bucket, "bucket.")
 	return nil
