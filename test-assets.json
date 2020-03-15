@@ -12,7 +12,6 @@
     {
         "name": "Uniswap: Dai Stablecoin",
         "type": "uniswap",
-        "updateInterval": 60,
         "reserveTokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
         "reserveTokenUuid": "e1f698bf-cb85-5405-b563-14774af14bf1",
         "reserveTokenDecimals": 18,
@@ -29,5 +28,71 @@
         "poolTokenAddress": "0x4d2f5cFbA55AE412221182D8475bC85799A5644b",
         "poolTokenUuid": "43b7e3fb-86ea-595e-b3df-cda91181881d",
         "poolTokenDecimals": 18
+    },
+    {
+        "name": "Compound: Augur",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "0x1985365e9f78359a9B6AD760e32412f4a445E862",
+        "reserveTokenUuid": "d017a1e8-bdd3-5c32-8866-da258f75b0e9",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0x158079Ee67Fce2f58472A96584A73C7Ab9AC95c1",
+        "poolTokenUuid": "7749b621-c2e8-553b-83c7-f73d86a38eb7",
+        "poolTokenDecimals": 8
+    },
+    {
+        "name": "Compound: USDCoin",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "reserveTokenUuid": "2ed3ebcd-2d4f-52f7-b12b-54360ed49b55",
+        "reserveTokenDecimals": 6,
+        "poolTokenAddress": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+        "poolTokenUuid": "282fd2da-f437-5f53-a167-ca7f7e91c57f",
+        "poolTokenDecimals": 8
+    },
+    {
+        "name": "Compound: Ether",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "",
+        "reserveTokenUuid": "356a192b-7913-504c-9457-4d18c28d46e6",
+        "reserveTokenDecimals": 0,
+        "poolTokenAddress": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+        "poolTokenUuid": "4f96a9e6-bf30-54d0-90c0-3d6e7d7042f2",
+        "poolTokenDecimals": 8
+    },
+    {
+        "name": "Compound: Basic Attention Token",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+        "reserveTokenUuid":"e34bb9ff-47be-503b-956b-30d4b3f3507b",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E",
+        "poolTokenUuid": "4a21c8bc-3df3-5d61-b9c4-c6c2f2296914",
+        "poolTokenDecimals": 8
+    },
+    {
+        "name": "Compound: 0x Token",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "0xE41d2489571d322189246DaFA5ebDe1F4699F498BA",
+        "reserveTokenUuid": "36a94c95-ec51-5e0f-b254-415e31d1c3a7",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0xB3319f5D18Bc0D84dD1b4825Dcde5d5f7266d407",
+        "poolTokenUuid": "e35a1b81-b775-5b8b-9744-ef997b4f677c",
+        "poolTokenDecimals": 8
+    },
+    {
+        "name": "Compound: Dai Token",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "reserveTokenUuid": "e1f698bf-cb85-5405-b563-14774af14bf1",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+        "poolTokenUuid": "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3",
+        "poolTokenDecimals": 8
     }
 ]

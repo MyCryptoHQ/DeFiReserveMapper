@@ -209,6 +209,16 @@
             }
         ]
     },
+    "282fd2da-f437-5f53-a167-ca7f7e91c57f": {
+        "type": "compound",
+        "lastUpdated": 1584237806,
+        "reserveRates": [
+            {
+                "assetId": "2ed3ebcd-2d4f-52f7-b12b-54360ed49b55",
+                "rate": "0.021006481045333388"
+            }
+        ]
+    },
     "2a564380-964a-5f5a-8ca8-17d5d37d4b2c": {
         "type": "uniswap",
         "lastUpdated": 1584233112,
@@ -225,15 +235,15 @@
     },
     "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87": {
         "type": "uniswap",
-        "lastUpdated": 1584233102,
+        "lastUpdated": 1584237330,
         "reserveRates": [
             {
                 "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
-                "rate": "1.39293565581541"
+                "rate": "1.3908053823355735"
             },
             {
                 "assetId": "e1f698bf-cb85-5405-b563-14774af14bf1",
-                "rate": "160.41487910763837"
+                "rate": "160.7434738819889"
             }
         ]
     },
@@ -262,6 +272,16 @@
             {
                 "assetId": "6c67c161-9c44-5ba7-85ec-7d91ac2c5e80",
                 "rate": "1271.4563320145342"
+            }
+        ]
+    },
+    "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3": {
+        "type": "compound",
+        "lastUpdated": 1584237806,
+        "reserveRates": [
+            {
+                "assetId": "e1f698bf-cb85-5405-b563-14774af14bf1",
+                "rate": "0.020369635086172562"
             }
         ]
     },
@@ -295,15 +315,15 @@
     },
     "43b7e3fb-86ea-595e-b3df-cda91181881d": {
         "type": "uniswap",
-        "lastUpdated": 1584233111,
+        "lastUpdated": 1584237248,
         "reserveRates": [
             {
                 "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
-                "rate": "1.2265949823921658"
+                "rate": "1.2250093722114983"
             },
             {
                 "assetId": "0486cb78-9392-5ff0-a790-03843d79b073",
-                "rate": "0.0289687871135962"
+                "rate": "0.02900639614669266"
             }
         ]
     },
@@ -323,15 +343,25 @@
     },
     "459a37b4-ad23-5c2b-8030-031eeff78453": {
         "type": "uniswap",
-        "lastUpdated": 1584233102,
+        "lastUpdated": 1584237248,
         "reserveRates": [
             {
                 "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
-                "rate": "1.7249581588330112"
+                "rate": "1.73242490972352"
             },
             {
                 "assetId": "53306efd-fb16-5e9a-b6d0-fc0e9713da40",
-                "rate": "200.02450985619635"
+                "rate": "199.25949747148798"
+            }
+        ]
+    },
+    "4a21c8bc-3df3-5d61-b9c4-c6c2f2296914": {
+        "type": "compound",
+        "lastUpdated": 1584237806,
+        "reserveRates": [
+            {
+                "assetId": "e34bb9ff-47be-503b-956b-30d4b3f3507b",
+                "rate": "0.020220645434662717"
             }
         ]
     },
@@ -374,6 +404,16 @@
             {
                 "assetId": "7993794d-4f07-5596-825d-7d1c8a699f50",
                 "rate": "0.021848091422777518"
+            }
+        ]
+    },
+    "4f96a9e6-bf30-54d0-90c0-3d6e7d7042f2": {
+        "type": "compound",
+        "lastUpdated": 1584237806,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.020011525881693628"
             }
         ]
     },
@@ -612,6 +652,16 @@
             {
                 "assetId": "8e194419-13c6-5fc6-8a90-75a65e8c79f2",
                 "rate": "4765.002741390706"
+            }
+        ]
+    },
+    "7749b621-c2e8-553b-83c7-f73d86a38eb7": {
+        "type": "compound",
+        "lastUpdated": 1584237806,
+        "reserveRates": [
+            {
+                "assetId": "d017a1e8-bdd3-5c32-8866-da258f75b0e9",
+                "rate": "0.020036117975579197"
             }
         ]
     },
@@ -1032,6 +1082,16 @@
             {
                 "assetId": "59f607ad-787d-5373-ad4e-4b6fd5a99603",
                 "rate": "844.3137697071975"
+            }
+        ]
+    },
+    "e35a1b81-b775-5b8b-9744-ef997b4f677c": {
+        "type": "compound",
+        "lastUpdated": 1584237806,
+        "reserveRates": [
+            {
+                "assetId": "36a94c95-ec51-5e0f-b254-415e31d1c3a7",
+                "rate": "0.02005844412111695"
             }
         ]
     },

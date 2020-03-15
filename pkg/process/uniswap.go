@@ -4,6 +4,7 @@ import (
 	"math"
 	"math/big"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/helpers"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/common"
@@ -19,7 +20,7 @@ func BuildUniswapETHReserveRate(ETHClient *ethclient.Client, importedItem root.I
 	floatPoolTotalSupply := new(big.Float).SetInt(poolReserveTotalSupply)
 	precision, _ := new(big.Float).Quo(big.NewFloat(1), big.NewFloat(math.Pow10(int(18)))).Float64()
 	outputRate, _ := new(big.Float).Quo(floatPoolReserveETH, floatPoolTotalSupply).Float64()
-	truncatedRate := Truncate(outputRate, precision)
+	truncatedRate := helpers.Truncate(outputRate, precision)
 	return big.NewFloat(truncatedRate), nil
 }
 
@@ -35,7 +36,7 @@ func BuildUniswapERC20ReserveRate(ETHClient *ethclient.Client, importedItem root
 	if err != nil {
 		return nil, err
 	}
-	
+
 	floatPoolReserveERC20 := new(big.Float).SetInt(poolReserveERC20)
 	floatPoolTotalSupply := new(big.Float).SetInt(poolReserveTotalSupply)
 
@@ -44,7 +45,7 @@ func BuildUniswapERC20ReserveRate(ETHClient *ethclient.Client, importedItem root
 	
 	outputRateBase := new(big.Float).Quo(floatPoolReserveERC20, floatPoolTotalSupply)
 	outputRate, _ := new(big.Float).Mul(multiplier, outputRateBase).Float64()
-	truncatedRate := Truncate(outputRate, precision)
+	truncatedRate := helpers.Truncate(outputRate, precision)
 	return big.NewFloat(truncatedRate), nil
 }
 
