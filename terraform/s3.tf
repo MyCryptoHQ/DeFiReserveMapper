@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "defi_s3_bucket" { // creates a new `aws_s3_bucket` resource and gives it an id `defi_s3_bucket`
-  bucket = "defi-reserve-mapper"            // names the bucket `defi-reserve-mapper`
+  bucket = var.bucket                       // names the bucket `defi-reserve-mapper`
   acl    = "private"                        // defines the bucket as private
 
   versioning {

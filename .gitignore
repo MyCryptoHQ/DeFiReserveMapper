@@ -1,4 +1,6 @@
+# binaries
 /app/app
+bin/
 
 # terraform
 .terraform
