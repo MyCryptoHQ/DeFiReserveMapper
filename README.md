@@ -7,8 +7,7 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 
 ### ToDo:
 ~- [ ] Figure out bottlenecking requests so we don't spam the node and get blocked~ _I don't think we need to do this actually_
-- [ ] Handle compound assets.
-- [ ] Handle compound-ether asset (cETH => its different because its not an erc20 token).
+- [x] Handle compound assets.
 - [ ] Figure out caching on AWS.
 - [x] Figure out setting up timers to handle timing.
 
