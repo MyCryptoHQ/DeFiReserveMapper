@@ -22,7 +22,7 @@ var (
 
 func handleRequest() {
 	// Fetch input file
-	jsonFile, err := os.Open("./test-assets.json")
+	jsonFile, err := os.Open("./assets.json")
 	if err != nil {
 		log.Fatal("Couldn't open assets config file", err)
 	}

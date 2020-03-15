@@ -5,4 +5,4 @@ build:
 clean:
 	rm -rf ./bin ./vendor Gopkg.lock
 deploy: clean build
-	zip -r app.zip 'tmp/test-assets.json' 'bin/app'
+	zip -r app.zip 'assets.json' 'bin/app'

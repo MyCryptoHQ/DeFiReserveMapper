@@ -17,6 +17,13 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 ### To run:
 `cd app && go build && ./app`
 
+### To deploy:
+```
+    make deploy
+    cd terraform
+    terraform apply
+```
+
 We still need to handle this info to cache it, but this will print out [here](https://github.com/MyCryptoHQ/DeFiReserveMapper/blob/master/outputFile.json) an object that looks like this:
 ```
 {
@@ -48,3 +55,4 @@ We still need to handle this info to cache it, but this will print out [here](ht
 ```
 
 Implements: https://docs.google.com/document/d/1fHQyxPfOpQtptS9pqSKW5B7axm10bCq8hsHF6WTL8jg
+
