@@ -7,7 +7,6 @@ resource "aws_s3_bucket" "defi_s3_bucket" { // creates a new `aws_s3_bucket` res
   }
 
   tags = {
-    Name        = "defi-reserve-mapper" // sets bucket tag in aws to "defi-reserve-mapper"
-    Environment = "defi-reserve-mapper" // sets environment that the `defi-reserve-mapper` bucket belongs to
+    Name = "defi-reserve-mapper" // sets bucket tag in aws to "defi-reserve-mapper"
   }
 }

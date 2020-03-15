@@ -1,0 +1,104 @@
+{
+    "282fd2da-f437-5f53-a167-ca7f7e91c57f": {
+        "type": "compound",
+        "lastUpdated": 1584261365,
+        "reserveRates": [
+            {
+                "assetId": "2ed3ebcd-2d4f-52f7-b12b-54360ed49b55",
+                "rate": "0.021006653428450209"
+            }
+        ]
+    },
+    "2b7a4d65-9c40-5c21-96eb-f7d380a4dc87": {
+        "type": "uniswap",
+        "lastUpdated": 1584261308,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.399551650094926"
+            },
+            {
+                "assetId": "e1f698bf-cb85-5405-b563-14774af14bf1",
+                "rate": "160.01900992694988"
+            }
+        ]
+    },
+    "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3": {
+        "type": "compound",
+        "lastUpdated": 1584261365,
+        "reserveRates": [
+            {
+                "assetId": "e1f698bf-cb85-5405-b563-14774af14bf1",
+                "rate": "0.02037102228243593"
+            }
+        ]
+    },
+    "43b7e3fb-86ea-595e-b3df-cda91181881d": {
+        "type": "uniswap",
+        "lastUpdated": 1584261311,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.2329379622618624"
+            },
+            {
+                "assetId": "0486cb78-9392-5ff0-a790-03843d79b073",
+                "rate": "0.02882042405627404"
+            }
+        ]
+    },
+    "459a37b4-ad23-5c2b-8030-031eeff78453": {
+        "type": "uniswap",
+        "lastUpdated": 1584261306,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "1.7429749628130238"
+            },
+            {
+                "assetId": "53306efd-fb16-5e9a-b6d0-fc0e9713da40",
+                "rate": "198.71650785107676"
+            }
+        ]
+    },
+    "4a21c8bc-3df3-5d61-b9c4-c6c2f2296914": {
+        "type": "compound",
+        "lastUpdated": 1584261365,
+        "reserveRates": [
+            {
+                "assetId": "e34bb9ff-47be-503b-956b-30d4b3f3507b",
+                "rate": "0.020220656366982848"
+            }
+        ]
+    },
+    "4f96a9e6-bf30-54d0-90c0-3d6e7d7042f2": {
+        "type": "compound",
+        "lastUpdated": 1584261365,
+        "reserveRates": [
+            {
+                "assetId": "356a192b-7913-504c-9457-4d18c28d46e6",
+                "rate": "0.020011527899700674"
+            }
+        ]
+    },
+    "7749b621-c2e8-553b-83c7-f73d86a38eb7": {
+        "type": "compound",
+        "lastUpdated": 1584261365,
+        "reserveRates": [
+            {
+                "assetId": "d017a1e8-bdd3-5c32-8866-da258f75b0e9",
+                "rate": "0.02003611961858431"
+            }
+        ]
+    },
+    "e35a1b81-b775-5b8b-9744-ef997b4f677c": {
+        "type": "compound",
+        "lastUpdated": 1584261365,
+        "reserveRates": [
+            {
+                "assetId": "36a94c95-ec51-5e0f-b254-415e31d1c3a7",
+                "rate": "0.020058463481279053"
+            }
+        ]
+    }
+}
