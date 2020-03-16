@@ -8,6 +8,13 @@ resource "aws_s3_bucket" "defi_s3_bucket" { // creates a new `aws_s3_bucket` res
     error_document = "tmp/outputFile.json"
   }
 
+  cors_rule {
+    allowed_headers = ["*"]
+    allowed_methods = ["GET"]
+    allowed_origins = ["*"]
+    max_age_seconds = 1800
+  }
+
   versioning {
     enabled = true // enables versioning for the `defi_s3_bucket` resource
   }
