@@ -12,7 +12,7 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
 - [x] Figure out caching on AWS.
 - [x] Figure out setting up handling of update intervals.
 - [x] Deploy updater
-- [ ] Set up api endpoint?
+- [x] Set up api endpoint?
 
 ### To run locally:
 `cd app && go build && ./app`
