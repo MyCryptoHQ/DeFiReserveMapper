@@ -25,6 +25,7 @@ func Upload(bucket, region, fileName string, upload io.Reader) error {
 		Bucket: aws.String(bucket),
 		Key:    aws.String(fileName),
 		Body:   upload,
+		ContentType: aws.String("application/json"),
 	})
 	if err != nil {
 		exitErrorf("Error uploading %q to S3, %v", err)

@@ -9,10 +9,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/process"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/s3"
-	"github.com/aws/aws-lambda-go/lambda"
 )
 
 var (
