@@ -43,7 +43,7 @@ func Download(bucket, region, object string) error {
 
 	downloader := s3manager.NewDownloader(sess)
 
-	file, err := os.Create(object)
+	file, err := os.Create("/tmp/"+ object)
 	if err != nil {
 		exitErrorf("Unable to open file %q, %v", object, err)
 	}

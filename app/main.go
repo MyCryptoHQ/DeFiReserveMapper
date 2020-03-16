@@ -37,13 +37,13 @@ func handleRequest() {
 	// Fetch output file
 	outputItems := make(map[string]root.ReserveExchangeRate)
 
-	outputFile := "/tmp/outputFile.json"
+	outputFile := "outputFile.json"
 
 	// Download output file from s3
 	if err := s3.Download(bucket, region, outputFile); err != nil {
 		log.Println("\nCouldn't open output file. Assume this is first run.")
 	} else {
-		outputFile, err := os.Open(outputFile)
+		outputFile, err := os.Open("/tmp/" + outputFile)
 		if err != nil {
 			log.Printf("Couldn't open %s", outputFile.Name())
 		}
