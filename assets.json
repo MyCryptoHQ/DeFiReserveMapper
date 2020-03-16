@@ -987,11 +987,22 @@
     {
         "name": "Compound: Dai Token",
         "type": "compound",
-        "updateInterval": 60,
+        "updateInterval": 30,
         "reserveTokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
         "reserveTokenUuid": "e1f698bf-cb85-5405-b563-14774af14bf1",
         "reserveTokenDecimals": 18,
         "poolTokenAddress": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+        "poolTokenUuid": "a9cc6884-14bd-53b6-abcd-f9b56b60463d",
+        "poolTokenDecimals": 8
+    },
+    {
+        "name": "Compound: Sai Token",
+        "type": "compound",
+        "updateInterval": 30,
+        "reserveTokenAddress": "0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359",
+        "reserveTokenUuid": "53306efd-fb16-5e9a-b6d0-fc0e9713da40",
+        "reserveTokenDecimals": 18,
+        "poolTokenAddress": "0xF5DCe57282A584D2746FaF1593d3121Fcac444dC",
         "poolTokenUuid": "350c0d6f-a0eb-504e-9a8c-43a4d5966fc3",
         "poolTokenDecimals": 8
     }
