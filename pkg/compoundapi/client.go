@@ -5,8 +5,7 @@ import (
 	"github.com/postables/go-compound/client"
 )
 
-
-func MakeCompoundApiClient () (*client.Client) {
+func MakeCompoundApiClient() *client.Client {
 	client := client.NewClient(root.CompoundEndpoint)
 	return client
 }

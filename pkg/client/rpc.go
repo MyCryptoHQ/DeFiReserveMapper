@@ -2,9 +2,9 @@ package client
 
 import (
 	"context"
-	"math/big"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
+	"math/big"
 )
 
 func GetBalance(client ethclient.Client, address string) (*big.Int, error) {

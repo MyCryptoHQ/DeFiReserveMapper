@@ -2,8 +2,8 @@ package client
 
 import (
 	"context"
-	"math/big"
 	"github.com/ethereum/go-ethereum/common"
+	"math/big"
 )
 
 type TokenBalance struct {

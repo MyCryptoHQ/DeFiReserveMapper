@@ -1,13 +1,13 @@
 package process
 
 import (
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
+	"github.com/mycryptohq/DeFiReserveMapper/pkg/helpers"
 	"math"
 	"math/big"
-	"github.com/mycryptohq/DeFiReserveMapper/pkg"
-	"github.com/mycryptohq/DeFiReserveMapper/pkg/helpers"
-	"github.com/mycryptohq/DeFiReserveMapper/pkg/client"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/common"
 )
 
 func BuildUniswapETHReserveRate(ETHClient *ethclient.Client, importedItem root.ImportItem, poolReserveTotalSupply *big.Int) (*big.Float, error) {
@@ -28,8 +28,8 @@ func BuildUniswapERC20ReserveRate(ETHClient *ethclient.Client, importedItem root
 
 	tokenObject := client.TokenBalance{
 		Contract: common.HexToAddress(importedItem.ReserveTokenAddress),
-		Wallet: common.HexToAddress(importedItem.PoolTokenAddress),
-		Name: importedItem.Name,
+		Wallet:   common.HexToAddress(importedItem.PoolTokenAddress),
+		Name:     importedItem.Name,
 		Decimals: int64(importedItem.ReserveTokenDecimals),
 	}
 	poolReserveERC20, err := client.BalanceOf(ETHClient, tokenObject)
@@ -40,9 +40,9 @@ func BuildUniswapERC20ReserveRate(ETHClient *ethclient.Client, importedItem root
 	floatPoolReserveERC20 := new(big.Float).SetInt(poolReserveERC20)
 	floatPoolTotalSupply := new(big.Float).SetInt(poolReserveTotalSupply)
 
-	multiplier := big.NewFloat(math.Pow10(int(18-importedItem.ReserveTokenDecimals)))
+	multiplier := big.NewFloat(math.Pow10(int(18 - importedItem.ReserveTokenDecimals)))
 	precision, _ := new(big.Float).Quo(big.NewFloat(1), big.NewFloat(math.Pow10(int(18)))).Float64()
-	
+
 	outputRateBase := new(big.Float).Quo(floatPoolReserveERC20, floatPoolTotalSupply)
 	outputRate, _ := new(big.Float).Mul(multiplier, outputRateBase).Float64()
 	truncatedRate := helpers.Truncate(outputRate, precision)
@@ -52,7 +52,7 @@ func BuildUniswapERC20ReserveRate(ETHClient *ethclient.Client, importedItem root
 func FetchPoolTotalSupply(ETHClient *ethclient.Client, importedItem root.ImportItem) (*big.Int, error) {
 	poolTokenObject := client.TokenBalance{
 		Contract: common.HexToAddress(importedItem.PoolTokenAddress),
-		Name: importedItem.Name,
+		Name:     importedItem.Name,
 		Decimals: int64(importedItem.PoolTokenDecimals),
 	}
 

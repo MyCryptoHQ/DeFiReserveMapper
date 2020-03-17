@@ -1,11 +1,11 @@
 package client
 
 import (
-	"math/big"
-	"strings"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
+	"math/big"
+	"strings"
 )
 
 // tokenABI is the input ABI used to generate the binding from. Uses a default erc20 template

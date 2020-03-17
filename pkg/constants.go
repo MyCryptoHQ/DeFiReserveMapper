@@ -1,6 +1,6 @@
 package root
 
-var DefaultRefreshInterval = 60*60 // Default refresh interval 1 hr. Use this unless otherwise specified
+var DefaultRefreshInterval = 60 * 60 // Default refresh interval 1 hr. Use this unless otherwise specified
 
 var NodeEndpoint = "https://api.mycryptoapi.com/eth"
 var CompoundEndpoint = "https://api.compound.finance/api/v2"

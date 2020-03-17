@@ -2,7 +2,8 @@
 
 fmt:
 	cd app/ && go fmt
-	cd terraform && terraform fmt -diff
+	cd pkg/ && go fmt ./...
+	cd terraform/ && terraform fmt -diff
 build:
 	env GOOS=linux go build -ldflags="-s -w" -o bin/app app/main.go
 clean:

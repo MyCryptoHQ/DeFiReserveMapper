@@ -1,22 +1,22 @@
 package process
 
 import (
-	"strings"
-	"math/big"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg"
 	"github.com/mycryptohq/DeFiReserveMapper/pkg/compoundapi"
+	"math/big"
+	"strings"
 )
 
 type CompoundRate struct {
-	PoolTokenUuid			string			`json:"poolTokenUuid"`
-	ReserveTokenUuid		string			`json:"reserveTokenUuid"`
-	Rate					*big.Float		`json:"rate"`
+	PoolTokenUuid    string     `json:"poolTokenUuid"`
+	ReserveTokenUuid string     `json:"reserveTokenUuid"`
+	Rate             *big.Float `json:"rate"`
 }
 
 func BuildCompoundRates(compoundItems []root.ImportItem) ([]CompoundRate, error) {
 	var compoundReturnArray []CompoundRate
 	compoundClient := compoundapi.MakeCompoundApiClient()
-	
+
 	cTokens, err := compoundapi.FetchCompoundCTokens(compoundClient)
 	if err != nil {
 		return []CompoundRate{}, nil
@@ -26,17 +26,17 @@ func BuildCompoundRates(compoundItems []root.ImportItem) ([]CompoundRate, error)
 		for _, ctoken := range cTokens {
 			if strings.ToLower(ctoken.TokenAddress) == strings.ToLower(compoundItem.PoolTokenAddress) {
 				relevantCToken = ctoken
-				break;
+				break
 			}
 		}
 		exchangeRate, success := new(big.Float).SetString(relevantCToken.ExchangeRate.Value)
 		if success {
 			compoundReturnArray = append(compoundReturnArray, CompoundRate{
-				PoolTokenUuid: compoundItem.PoolTokenUuid,
+				PoolTokenUuid:    compoundItem.PoolTokenUuid,
 				ReserveTokenUuid: compoundItem.ReserveTokenUuid,
-				Rate: exchangeRate,
+				Rate:             exchangeRate,
 			})
 		}
-	} 
+	}
 	return compoundReturnArray, nil
 }

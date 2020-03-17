@@ -1,12 +1,12 @@
 package client
 
 import (
-	"math/big"
 	"github.com/ethereum/go-ethereum/ethclient"
+	"math/big"
 )
 
 func BalanceOf(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
-	
+
 	tokenCaller, err := NewTokenCaller(tokenObject.Contract, client)
 	if err != nil {
 		return big.NewInt(0), err
@@ -20,7 +20,7 @@ func BalanceOf(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, er
 }
 
 func TotalSupply(client *ethclient.Client, tokenObject TokenBalance) (*big.Int, error) {
-	
+
 	tokenCaller, err := NewTokenCaller(tokenObject.Contract, client)
 	if err != nil {
 		return big.NewInt(0), err

@@ -22,9 +22,9 @@ func Upload(bucket, region, fileName string, upload io.Reader) error {
 	uploader := s3manager.NewUploader(sess)
 
 	_, err := uploader.Upload(&s3manager.UploadInput{
-		Bucket: aws.String(bucket),
-		Key:    aws.String(fileName),
-		Body:   upload,
+		Bucket:      aws.String(bucket),
+		Key:         aws.String(fileName),
+		Body:        upload,
 		ContentType: aws.String("application/json"),
 	})
 	if err != nil {
@@ -43,7 +43,7 @@ func Download(bucket, region, object string) error {
 
 	downloader := s3manager.NewDownloader(sess)
 
-	file, err := os.Create("/tmp/"+ object)
+	file, err := os.Create("/tmp/" + object)
 	if err != nil {
 		exitErrorf("Unable to open file %q, %v", object, err)
 	}
