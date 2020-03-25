@@ -28,10 +28,10 @@ Used for mapping DeFi pool tokens to their related reserves for caching in use b
     terraform destroy
 ```
 
-We still need to handle this info to cache it, but this will print out [here](https://github.com/MyCryptoHQ/DeFiReserveMapper/blob/master/outputFile.json) an object that looks like this:
+This will cache this type of object:
 ```
 {
-    "4f96a9e6-bf30-54d0-90c0-3d6e7d7042f2"[UUID OF COMPOUND POOL TOKEN]: {
+    "4f96a9e6-bf30-54d0-90c0-3d6e7d7042f2": {
         "type": "compound",
         "lastUpdated": 1584237806,
         "reserveRates": [
@@ -41,7 +41,7 @@ We still need to handle this info to cache it, but this will print out [here](ht
             }
         ]
     },
-    "50b83702-2652-5e12-8585-cd8014641b74"[UUID OF UNISWAP POOL TOKEN]: {
+    "50b83702-2652-5e12-8585-cd8014641b74": {
         "type": "uniswap",
         "lastUpdated": 1584233100,
         "reserveRates": [
